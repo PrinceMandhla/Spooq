@@ -1,8 +1,14 @@
 body{
-    background-color: rgb(100, 49, 228);
+    background-color: #6431e4;
+}
+
+#flx1{
+    display: flex;
+    background-color: #34189b;
+    flex-direction: row;
 }
 
 h1{
     text-align: center;
-    
+    color: #000000;
 }
