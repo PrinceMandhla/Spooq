@@ -1,9 +1,11 @@
-from django.views.generic import TemplateView
+from django.views.generic import ListView
 from django.http import HttpResponse
-
+from .models import Member
 # Create your views here.
 
-class MembersView (TemplateView):
+class MembersView (ListView):
+        model = Member
         template_name = 'memb.html'
+        context_object_name = 'members'
 
        
