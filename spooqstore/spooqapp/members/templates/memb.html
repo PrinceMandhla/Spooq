@@ -1,11 +1,11 @@
-{% extends 'base.html %' %}
+{% extends 'base.html' %}
 
 {%block title%}Members Page{%endblock%}
 {%block content%}
 <h2>Members List</h2>
-    <h1>Members</h1>
+
     <ul>
-        {%for mem in members%}
+        {%for member in members%}
             <li>
                 <strong>First Name:</strong>{{member.firstname}}<br>
                 <strong>Last Name:</strong> {{member.lastname}}<br>

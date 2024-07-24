@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="{%url 'home'%}">Home Page</a></h1>
+    <div>
+        {% if user.is_authenticated %}
+
+            <p>Hello {{user.username}}!</p>
+
+            <p><a href="{%url 'logout' %}">Log Out</a></p>
+        {%else%}
+            <p>Please Login.</p>
+            <p><a href="{%url 'login' %}">Log In</a></p>
+        {%endif%}
+        <p>Welcome to our website. Your adventure starts now.</p>
+    </div>
+</body>
+</html>

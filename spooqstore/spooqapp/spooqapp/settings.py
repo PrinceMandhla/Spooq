@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'members',
-    'products'
+    'products',
+    'user_reg'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,10 @@ TEMPLATES = [
         },
     },
 ]
+
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = 'home'
 
 WSGI_APPLICATION = 'spooqapp.wsgi.application'
 
